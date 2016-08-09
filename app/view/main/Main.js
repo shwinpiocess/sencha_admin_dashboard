@@ -21,7 +21,9 @@ Ext.define('Admin.view.main.Main', {
         'Admin.view.main.MainViewModel',
         'Admin.view.main.MainViewController',
         'Ext.toolbar.Toolbar',
-        'Ext.button.Button'
+        'Ext.button.Button',
+        'Ext.toolbar.Fill',
+        'Ext.button.Segmented'
     ],
 
     controller: 'main.main',
@@ -59,6 +61,30 @@ Ext.define('Admin.view.main.Main', {
                     id: 'main-navigation-btn',
                     margin: '0 0 0 8',
                     iconCls: 'x-fa fa-navicon'
+                },
+                {
+                    xtype: 'tbfill'
+                },
+                {
+                    xtype: 'segmentedbutton',
+                    platformConfig: {
+                        ie9m: {
+                            hidden: true
+                        }
+                    },
+                    margin: '0 16 0 0',
+                    items: [
+                        {
+                            enableToggle: true,
+                            iconCls: 'x-fa fa-desktop',
+                            pressed: true
+                        },
+                        {
+                            handler: 'onSwitchToModern',
+                            iconCls: 'x-fa fa-tablet',
+                            tooltip: 'Switch to modern toolkit'
+                        }
+                    ]
                 }
             ]
         }

@@ -23,6 +23,10 @@ Ext.define('Admin.view.main.MainViewController', {
 
     onToggleNavigationSize: function(button, e) {
 
+    },
+
+    onSwitchToModern: function(button, e) {
+
     }
 
 });

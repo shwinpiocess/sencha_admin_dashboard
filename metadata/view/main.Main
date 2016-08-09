@@ -112,6 +112,107 @@
                             "designerId": "69572416-940b-40c2-94ee-58f08417056a"
                         }
                     ]
+                },
+                {
+                    "type": "Ext.toolbar.Fill",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null
+                    },
+                    "name": "MyFill",
+                    "designerId": "5f89b8c3-07ac-4e26-8b14-e84a62b8cb18"
+                },
+                {
+                    "type": "Ext.button.Segmented",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "margin": "0 16 0 0",
+                        "platformConfig": [
+                            "{",
+                            "    ie9m: {",
+                            "        hidden: true",
+                            "    }",
+                            "}"
+                        ]
+                    },
+                    "name": "MySegmentedButton",
+                    "configAlternates": {
+                        "platformConfig": "object"
+                    },
+                    "designerId": "4298c01c-d731-4515-b87c-dfda2b2edd23",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "platformConfig",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowDepress": null,
+                                "enableToggle": true,
+                                "iconCls": "x-fa fa-desktop",
+                                "pressed": true,
+                                "text": null
+                            },
+                            "name": "MyButton1",
+                            "designerId": "00e50eb1-b3e4-48f7-ab7c-a7f152977d93"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "iconCls": "x-fa fa-tablet",
+                                "text": null,
+                                "tooltip": [
+                                    "Switch to modern toolkit"
+                                ]
+                            },
+                            "name": "MyButton2",
+                            "designerId": "1a80e9be-5f9a-44cd-b15a-efb19ab12cdb",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "e"
+                                        ],
+                                        "designer|viewControllerFn": "onSwitchToModern",
+                                        "fn": "handler",
+                                        "implHandler": null
+                                    },
+                                    "name": "handler",
+                                    "designerId": "b066662c-60e3-44cd-b2d1-473519abe4e9"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }
