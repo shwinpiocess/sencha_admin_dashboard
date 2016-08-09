@@ -1,0 +1,81 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": [
+            "sencha-dash-viewport"
+        ],
+        "container|align": "stretch",
+        "designer|initialView": true,
+        "designer|userAlias": "main.main",
+        "designer|userClassName": "main.Main",
+        "itemId": "mainView",
+        "layout": "vbox"
+    },
+    "name": "MyViewport",
+    "designerId": "d349fae7-3e72-42c7-b669-5dbebedca16d",
+    "viewControllerInstanceId": "47a7a1ae-1456-40a0-926c-cc69badf808c",
+    "viewModelInstanceId": "6cbdb3ed-9c7f-4971-b634-6c4a665ccf2b",
+    "cn": [
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onMainViewRender",
+                "name": "render",
+                "scope": "me"
+            },
+            "name": "onMainViewRender",
+            "designerId": "d27ce711-7886-4a58-89fc-d0a3c9df9889"
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "sencha-dash-dash-headerbar shadow"
+                ],
+                "height": 64,
+                "itemId": "headerBar",
+                "layout|flex": 1
+            },
+            "name": "MyToolbar",
+            "designerId": "14a1c059-440c-44c9-855d-1e4c892ffc9c",
+            "cn": [
+                {
+                    "type": "Ext.Component",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "sencha-logo"
+                        ],
+                        "html": [
+                            "<div class=\"main-logo\"><img src=\"resources/images/company-logo.png\">Sencha</div>"
+                        ],
+                        "layout|flex": null,
+                        "reference": "senchaLogo",
+                        "width": 250
+                    },
+                    "name": "MyComponent",
+                    "designerId": "cf064501-0deb-4394-9b0f-5f11528be0fa"
+                }
+            ]
+        }
+    ]
+}

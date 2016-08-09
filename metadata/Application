@@ -6,7 +6,10 @@
     },
     "codeClass": null,
     "userConfig": {
-        "name": "Admin"
+        "name": "Admin",
+        "views": [
+            "main.Main"
+        ]
     },
     "name": "Application",
     "designerId": "application"

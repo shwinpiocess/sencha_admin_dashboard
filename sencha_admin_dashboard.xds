@@ -31,7 +31,11 @@
     "upgradeVersion": 310000000001,
     "framework": "ext60",
     "viewOrderMap": {
-        "view": [],
+        "view": [
+            "d349fae7-3e72-42c7-b669-5dbebedca16d",
+            "6cbdb3ed-9c7f-4971-b634-6c4a665ccf2b",
+            "47a7a1ae-1456-40a0-926c-cc69badf808c"
+        ],
         "store": [],
         "controller": [],
         "model": [],
