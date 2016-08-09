@@ -311,6 +311,26 @@
                     },
                     "name": "MyTextItem",
                     "designerId": "801b5319-8acd-4449-9e48-af8a0067f11d"
+                },
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "alt": "current user image",
+                        "cls": [
+                            "header-right-profile-image"
+                        ],
+                        "height": 35,
+                        "layout|flex": null,
+                        "src": "resources/images/user-profile/2.png",
+                        "width": 35
+                    },
+                    "name": "MyImg",
+                    "designerId": "be6e0551-8031-4531-bc9d-564a6ac4ca91"
                 }
             ]
         }

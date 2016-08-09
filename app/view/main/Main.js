@@ -24,7 +24,8 @@ Ext.define('Admin.view.main.Main', {
         'Ext.button.Button',
         'Ext.toolbar.Fill',
         'Ext.button.Segmented',
-        'Ext.toolbar.TextItem'
+        'Ext.toolbar.TextItem',
+        'Ext.Img'
     ],
 
     controller: 'main.main',
@@ -119,6 +120,14 @@ Ext.define('Admin.view.main.Main', {
                     xtype: 'tbtext',
                     cls: 'top-user-name',
                     html: 'Goff Smith'
+                },
+                {
+                    xtype: 'image',
+                    cls: 'header-right-profile-image',
+                    height: 35,
+                    width: 35,
+                    alt: 'current user image',
+                    src: 'resources/images/user-profile/2.png'
                 }
             ]
         }
