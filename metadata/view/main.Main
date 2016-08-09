@@ -213,6 +213,26 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "href": "#searchresults",
+                        "hrefTarget": "_self",
+                        "iconCls": "x-fa fa-search",
+                        "layout|flex": null,
+                        "text": null,
+                        "tooltip": [
+                            "See latest search"
+                        ]
+                    },
+                    "name": "MyButton3",
+                    "designerId": "1746c5bb-5f78-429b-aa45-89fd1b9a675e"
                 }
             ]
         }

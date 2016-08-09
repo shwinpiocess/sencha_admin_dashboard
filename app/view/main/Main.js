@@ -85,6 +85,13 @@ Ext.define('Admin.view.main.Main', {
                             tooltip: 'Switch to modern toolkit'
                         }
                     ]
+                },
+                {
+                    xtype: 'button',
+                    href: '#searchresults',
+                    hrefTarget: '_self',
+                    iconCls: 'x-fa fa-search',
+                    tooltip: 'See latest search'
                 }
             ]
         }
