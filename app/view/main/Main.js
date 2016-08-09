@@ -92,6 +92,13 @@ Ext.define('Admin.view.main.Main', {
                     hrefTarget: '_self',
                     iconCls: 'x-fa fa-search',
                     tooltip: 'See latest search'
+                },
+                {
+                    xtype: 'button',
+                    href: '#email',
+                    hrefTarget: '_self',
+                    iconCls: 'x-fa fa-envelope',
+                    tooltip: 'Check your email'
                 }
             ]
         }

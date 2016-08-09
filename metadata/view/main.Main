@@ -233,6 +233,26 @@
                     },
                     "name": "MyButton3",
                     "designerId": "1746c5bb-5f78-429b-aa45-89fd1b9a675e"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "href": "#email",
+                        "hrefTarget": "_self",
+                        "iconCls": "x-fa fa-envelope",
+                        "layout|flex": null,
+                        "text": null,
+                        "tooltip": [
+                            "Check your email"
+                        ]
+                    },
+                    "name": "MyButton4",
+                    "designerId": "8d3c8dd1-4ec9-4ee4-98e7-6ca4d1a5e316"
                 }
             ]
         }
