@@ -23,7 +23,8 @@ Ext.define('Admin.view.main.Main', {
         'Ext.toolbar.Toolbar',
         'Ext.button.Button',
         'Ext.toolbar.Fill',
-        'Ext.button.Segmented'
+        'Ext.button.Segmented',
+        'Ext.toolbar.TextItem'
     ],
 
     controller: 'main.main',
@@ -113,6 +114,11 @@ Ext.define('Admin.view.main.Main', {
                     hrefTarget: '_self',
                     iconCls: 'x-fa fa-th-large',
                     tooltip: 'See your profile'
+                },
+                {
+                    xtype: 'tbtext',
+                    cls: 'top-user-name',
+                    html: 'Goff Smith'
                 }
             ]
         }

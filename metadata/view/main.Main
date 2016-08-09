@@ -294,6 +294,23 @@
                         "tooltip": "string"
                     },
                     "designerId": "bfec6328-0187-499c-ac29-268520b54e9f"
+                },
+                {
+                    "type": "Ext.toolbar.TextItem",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "top-user-name"
+                        ],
+                        "html": "Goff Smith",
+                        "layout|flex": null
+                    },
+                    "name": "MyTextItem",
+                    "designerId": "801b5319-8acd-4449-9e48-af8a0067f11d"
                 }
             ]
         }
