@@ -30,6 +30,11 @@
             "codeClass": null,
             "userConfig": {
                 "fn": "onMainViewRender",
+                "implHandler": [
+                    "        if (!window.location.hash) {",
+                    "            this.redirectTo(\"dashboard\");",
+                    "        }"
+                ],
                 "name": "render",
                 "scope": "me"
             },

@@ -7,7 +7,120 @@
     "codeClass": null,
     "userConfig": {
         "designer|userAlias": "main.main",
-        "designer|userClassName": "main.MainViewController"
+        "designer|userClassName": "main.MainViewController",
+        "lastView": "null",
+        "listen": [
+            "{",
+            "        controller : {",
+            "            '#' : {",
+            "                unmatchedroute : 'onRouteChange'",
+            "            }",
+            "        }",
+            "        }"
+        ]
     },
-    "designerId": "47a7a1ae-1456-40a0-926c-cc69badf808c"
+    "designerId": "47a7a1ae-1456-40a0-926c-cc69badf808c",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "lastView",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.app.route.Route",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "node"
+                ],
+                "fn": "onRouteChange",
+                "implHandler": [
+                    "this.setCurrentView(id);"
+                ],
+                "url": ":node"
+            },
+            "name": "onRouteChange",
+            "designerId": "a28d5cbf-0344-4ca9-963c-ad9b2bc3f735"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "hashTag"
+                ],
+                "fn": "setCurrentView",
+                "implHandler": [
+                    "        hashTag = (hashTag || '').toLowerCase();",
+                    "",
+                    "        var me = this,",
+                    "            refs = me.getReferences(),",
+                    "            mainCard = refs.mainCardPanel,",
+                    "            mainLayout = mainCard.getLayout(),",
+                    "            navigationList = refs.navigationTreeList,",
+                    "            store = navigationList.getStore(),",
+                    "            node = store.findNode('routeId', hashTag) ||",
+                    "                   store.findNode('viewType', hashTag),",
+                    "            view = (node && node.get('viewType')) || 'page404',",
+                    "            lastView = me.lastView,",
+                    "            existingItem = mainCard.child('component[routeId=' + hashTag + ']'),",
+                    "            newView;",
+                    "",
+                    "        // Kill any previously routed window",
+                    "        if (lastView && lastView.isWindow) {",
+                    "            lastView.destroy();",
+                    "        }",
+                    "",
+                    "        lastView = mainLayout.getActiveItem();",
+                    "",
+                    "        if (!existingItem) {",
+                    "            newView = Ext.create({",
+                    "                xtype: view,",
+                    "                routeId: hashTag,  // for existingItem search later",
+                    "                hideMode: 'offsets'",
+                    "            });",
+                    "        }",
+                    "",
+                    "        if (!newView || !newView.isWindow) {",
+                    "            // !newView means we have an existing view, but if the newView isWindow",
+                    "            // we don't add it to the card layout.",
+                    "            if (existingItem) {",
+                    "                // We don't have a newView, so activate the existing view.",
+                    "                if (existingItem !== lastView) {",
+                    "                    mainLayout.setActiveItem(existingItem);",
+                    "                }",
+                    "                newView = existingItem;",
+                    "            }",
+                    "            else {",
+                    "                // newView is set (did not exist already), so add it and make it the",
+                    "                // activeItem.",
+                    "                Ext.suspendLayouts();",
+                    "                mainLayout.setActiveItem(mainCard.add(newView));",
+                    "                Ext.resumeLayouts(true);",
+                    "            }",
+                    "        }",
+                    "",
+                    "        navigationList.setSelection(node);",
+                    "",
+                    "        if (newView.isFocusable(true)) {",
+                    "            newView.focus();",
+                    "        }",
+                    "",
+                    "        me.lastView = newView;"
+                ]
+            },
+            "name": "setCurrentView",
+            "designerId": "41a402da-d65c-459b-9b6f-72561289eaa6"
+        }
+    ]
 }
