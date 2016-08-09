@@ -69,6 +69,37 @@
             },
             "name": "MyContainer",
             "designerId": "794ac661-0f66-4d8a-ac06-d8c14a995c8f"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "beforeLayout",
+                "implHandler": [
+                    "        // We setup some minHeights dynamically to ensure we stretch to fill the height",
+                    "        // of the viewport minus the top toolbar",
+                    "",
+                    "        var me = this,",
+                    "            height = Ext.Element.getViewportHeight() - 64,  // offset by topmost toolbar height",
+                    "            // We use itemId/getComponent instead of \"reference\" because the initial",
+                    "            // layout occurs too early for the reference to be resolved",
+                    "            navTree = me.getComponent('navigationTreeList');",
+                    "",
+                    "        me.minHeight = height;",
+                    "",
+                    "        navTree.setStyle({",
+                    "            'min-height': height + 'px'",
+                    "        });",
+                    "",
+                    "        me.callParent(arguments);"
+                ]
+            },
+            "name": "beforeLayout",
+            "designerId": "41dbd184-7c21-46a3-8e5e-09ccdbfe8ea4"
         }
     ]
 }
