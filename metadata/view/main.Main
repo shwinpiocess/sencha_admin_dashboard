@@ -74,6 +74,44 @@
                     },
                     "name": "MyComponent",
                     "designerId": "cf064501-0deb-4394-9b0f-5f11528be0fa"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "x-fa fa-navicon",
+                        "id": "main-navigation-btn",
+                        "layout|flex": null,
+                        "margin": "0 0 0 8",
+                        "text": null
+                    },
+                    "name": "MyButton",
+                    "designerId": "6c740432-cc39-4d68-b376-f7b1d1b4fa38",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "button",
+                                    "e"
+                                ],
+                                "designer|viewControllerFn": "onToggleNavigationSize",
+                                "fn": "handler",
+                                "implHandler": null
+                            },
+                            "name": "handler",
+                            "designerId": "69572416-940b-40c2-94ee-58f08417056a"
+                        }
+                    ]
                 }
             ]
         }

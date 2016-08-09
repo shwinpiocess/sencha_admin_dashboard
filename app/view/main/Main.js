@@ -20,7 +20,8 @@ Ext.define('Admin.view.main.Main', {
     requires: [
         'Admin.view.main.MainViewModel',
         'Admin.view.main.MainViewController',
-        'Ext.toolbar.Toolbar'
+        'Ext.toolbar.Toolbar',
+        'Ext.button.Button'
     ],
 
     controller: 'main.main',
@@ -51,6 +52,13 @@ Ext.define('Admin.view.main.Main', {
                     cls: 'sencha-logo',
                     html: '<div class="main-logo"><img src="resources/images/company-logo.png">Sencha</div>',
                     width: 250
+                },
+                {
+                    xtype: 'button',
+                    handler: 'onToggleNavigationSize',
+                    id: 'main-navigation-btn',
+                    margin: '0 0 0 8',
+                    iconCls: 'x-fa fa-navicon'
                 }
             ]
         }

@@ -19,6 +19,10 @@ Ext.define('Admin.view.main.MainViewController', {
 
     onMainViewRender: function(component, eOpts) {
 
+    },
+
+    onToggleNavigationSize: function(button, e) {
+
     }
 
 });
