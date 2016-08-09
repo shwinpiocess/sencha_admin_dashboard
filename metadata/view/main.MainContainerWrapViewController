@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "main.maincontainerwrap",
+        "designer|userClassName": "main.MainContainerWrapViewController"
+    },
+    "designerId": "724a24e9-ff69-491a-a142-0722810b391e"
+}

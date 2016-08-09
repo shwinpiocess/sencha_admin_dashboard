@@ -7,8 +7,12 @@
     "codeClass": null,
     "userConfig": {
         "name": "Admin",
+        "stores": [
+            "NavigationTree"
+        ],
         "views": [
-            "main.Main"
+            "main.Main",
+            "main.MainContainerWrap"
         ]
     },
     "name": "Application",

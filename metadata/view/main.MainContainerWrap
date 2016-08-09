@@ -1,0 +1,74 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretchmax",
+        "designer|userAlias": "main.maincontainerwrap",
+        "designer|userClassName": "main.MainContainerWrap",
+        "height": null,
+        "layout": "hbox",
+        "scrollable": "y",
+        "width": null
+    },
+    "name": "MyContainer",
+    "designerId": "0ea2f543-6763-4fe5-aa73-c62402b08ed5",
+    "viewControllerInstanceId": "724a24e9-ff69-491a-a142-0722810b391e",
+    "viewModelInstanceId": "696be1e3-0f01-4c43-b7a5-29e46a0c8d23",
+    "cn": [
+        {
+            "type": "Ext.tree.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "navigationTreeList",
+                "layout|flex": 1,
+                "reference": "navigationTreeList",
+                "singleExpand": true,
+                "store": "NavigationTree",
+                "title": null,
+                "width": 250
+            },
+            "name": "MyTreePanel",
+            "designerId": "49964400-3dcd-4c17-825f-dea90c79865c",
+            "cn": [
+                {
+                    "type": "Ext.tree.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyTreeView",
+                    "designerId": "7f28786b-e6f1-4200-810b-7b4bd4d31ea5"
+                }
+            ]
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "anchor": "100%",
+                "cls": [
+                    "sencha-dash-right-main-container"
+                ],
+                "itemId": "contentPanel",
+                "layout": "card",
+                "layout|flex": 1,
+                "reference": "mainCardPanel"
+            },
+            "name": "MyContainer",
+            "designerId": "794ac661-0f66-4d8a-ac06-d8c14a995c8f"
+        }
+    ]
+}

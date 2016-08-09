@@ -20,6 +20,7 @@ Ext.define('Admin.view.main.Main', {
     requires: [
         'Admin.view.main.MainViewModel',
         'Admin.view.main.MainViewController',
+        'Admin.view.main.MainContainerWrap',
         'Ext.toolbar.Toolbar',
         'Ext.button.Button',
         'Ext.toolbar.Fill',
@@ -130,6 +131,12 @@ Ext.define('Admin.view.main.Main', {
                     src: 'resources/images/user-profile/2.png'
                 }
             ]
+        },
+        {
+            xtype: 'main.maincontainerwrap',
+            flex: 1,
+            reference: 'mainContainerWrap',
+            id: 'main-view-detail-wrap'
         }
     ]
 

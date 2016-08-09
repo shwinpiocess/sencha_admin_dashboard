@@ -34,9 +34,14 @@
         "view": [
             "d349fae7-3e72-42c7-b669-5dbebedca16d",
             "6cbdb3ed-9c7f-4971-b634-6c4a665ccf2b",
-            "47a7a1ae-1456-40a0-926c-cc69badf808c"
+            "47a7a1ae-1456-40a0-926c-cc69badf808c",
+            "0ea2f543-6763-4fe5-aa73-c62402b08ed5",
+            "696be1e3-0f01-4c43-b7a5-29e46a0c8d23",
+            "724a24e9-ff69-491a-a142-0722810b391e"
         ],
-        "store": [],
+        "store": [
+            "a3e47d21-c0fb-423e-8a5c-1a913a0349d3"
+        ],
         "controller": [],
         "model": [],
         "resource": [
