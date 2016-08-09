@@ -99,6 +99,13 @@ Ext.define('Admin.view.main.Main', {
                     hrefTarget: '_self',
                     iconCls: 'x-fa fa-envelope',
                     tooltip: 'Check your email'
+                },
+                {
+                    xtype: 'button',
+                    href: '#faq',
+                    hrefTarget: '_self',
+                    iconCls: 'x-fa fa-question',
+                    tooltip: 'Help / FAQ\'s'
                 }
             ]
         }

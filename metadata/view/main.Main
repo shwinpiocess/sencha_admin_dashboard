@@ -253,6 +253,26 @@
                     },
                     "name": "MyButton4",
                     "designerId": "8d3c8dd1-4ec9-4ee4-98e7-6ca4d1a5e316"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "href": "#faq",
+                        "hrefTarget": "_self",
+                        "iconCls": "x-fa fa-question",
+                        "layout|flex": null,
+                        "text": null,
+                        "tooltip": [
+                            "Help / FAQ's"
+                        ]
+                    },
+                    "name": "MyButton5",
+                    "designerId": "86e2cbe9-fb13-4cdd-9388-4a8ba5902b10"
                 }
             ]
         }
