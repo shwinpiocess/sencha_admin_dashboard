@@ -106,6 +106,13 @@ Ext.define('Admin.view.main.Main', {
                     hrefTarget: '_self',
                     iconCls: 'x-fa fa-question',
                     tooltip: 'Help / FAQ\'s'
+                },
+                {
+                    xtype: 'button',
+                    href: '#profile',
+                    hrefTarget: '_self',
+                    iconCls: 'x-fa fa-th-large',
+                    tooltip: 'See your profile'
                 }
             ]
         }

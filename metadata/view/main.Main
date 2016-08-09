@@ -273,6 +273,27 @@
                     },
                     "name": "MyButton5",
                     "designerId": "86e2cbe9-fb13-4cdd-9388-4a8ba5902b10"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "href": "#profile",
+                        "hrefTarget": "_self",
+                        "iconCls": "x-fa fa-th-large",
+                        "layout|flex": null,
+                        "text": null,
+                        "tooltip": "See your profile"
+                    },
+                    "name": "MyButton6",
+                    "configAlternates": {
+                        "tooltip": "string"
+                    },
+                    "designerId": "bfec6328-0187-499c-ac29-268520b54e9f"
                 }
             ]
         }
