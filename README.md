@@ -1,0 +1,2 @@
+# sencha_admin_dashboard
+用Sencha Architect实现Sencha官方的admin-dashboard样例
